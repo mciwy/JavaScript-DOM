@@ -28,8 +28,8 @@
 
 Чтобы использовать этот проект, выполните следующие действия:
 
-1. Клонируйте репозиторий на свою локальную машину: `git clone https://github.com/dlrxgit/JS-DOM.git`
-2. Перейдите в папку `control-point-3`: `cd JS-DOM/control-point-3`
+1. Клонируйте репозиторий на свою локальную машину: `git clone https://github.com/dlrxgit/JavaScript-DOM.git`
+2. Перейдите в папку `control-point-3`: `cd JavaScript-DOM/control-point-3`
 3. Откройте файл `index.html` в вашем любимом браузере.
 4. Взаимодействуйте с веб-приложением, добавляя и удаляя элементы из списка покупок.
 
