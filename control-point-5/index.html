@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+  <title>Банковская карточка</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <h2>Информация о банковской карточке</h2>
+  <form id="card-form">
+    <label for="bank-name">Название банка:</label>
+    <input type="text" id="bank-name" required><br>
+
+    <label for="payment-system">Тип платежной системы:</label>
+    <input type="text" id="payment-system" required><br>
+
+    <label for="card-number">Номер карты:</label>
+    <input type="text" id="card-number" pattern="\d{16}" required><br>
+
+    <label for="card-holder">Имя держателя карты:</label>
+    <input type="text" id="card-holder" required><br>
+
+    <label for="expiry-date">Месяц и год окончания карты:</label>
+    <input type="text" id="expiry-date" pattern="(0[1-9]|1[0-2])\/(\d{2})" required><br>
+
+    <button type="submit">Добавить</button>
+  </form>
+
+  <div id="card-thumbnail" class="card-thumbnail"></div>
+
+  <table id="card-table">
+    <thead>
+      <tr>
+        <th>Название банка</th>
+        <th>Тип платежной системы</th>
+        <th>Номер карты</th>
+        <th>Имя держателя карты</th>
+        <th>Месяц и год окончания карты</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
