@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>control-point-1-sem2</title>
+
+    <style>
+        table {
+            margin: 0 auto;
+        }
+
+        table td {
+            text-align: center;
+            padding: 1em;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="table"></table>
+
+    <script>
+        function rnd(min, max) {
+            return Math.floor(Math.random() * (max - min) + min);
+        }
+
+        let table = document.querySelector('#table');
+
+        const arr = [
+            [0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0]
+        ];
+
+        fillTable(table, arr);
+
+        function fillTable(table, arr) {
+            for (let i = 0; i < arr.length; i++) {
+                let tr = document.createElement('tr');
+
+                for (let j = 0; j < arr[i].length; j++) {
+                    let td = document.createElement('td');
+                    arr[i][j] = rnd(0, 99);
+                    td.innerHTML = arr[i][j]
+                    tr.appendChild(td);
+                }
+
+                table.appendChild(tr);
+            }
+        }
+
+        [...document.querySelectorAll('td')].forEach((s, i) => {
+            if (Number(s.innerHTML) >= 50 && Number(s.innerHTML) !== isNaN) {
+                s.style.backgroundColor = 'yellow';
+            }
+        });
+    </script>
+</body>
+
+</html>
