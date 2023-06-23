@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Мои задания и достижения</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои задания и достижения</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
         body {
             background-color: #f7f7f7;
             color: #333;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
         }
 
         header {
@@ -55,54 +68,69 @@
         }
     </style>
 </head>
+
 <body>
-  <header>
-    <h1>Мои задания и достижения</h1>
-    <p>Репозиторий с моими проектами и кодом</p>
-  </header>
+    <header>
+        <h1>Мои задания и достижения</h1>
+        <p>Репозиторий с моими проектами и кодом</p>
+    </header>
 
-  <main>
-    <section>
-      <h2>О проекте</h2>
-      <p>
-        Добро пожаловать на мой репозиторий с заданиями и достижениями! Здесь я представляю ряд проектов, которые я разработал в ходе изучения различных технологий и языков программирования. Эти проекты демонстрируют мои навыки и опыт в веб-разработке.
-      </p>
-    </section>
+    <main>
+        <section>
+            <h2>Описание</h2>
+            <p>
+                Добро пожаловать в мой репозиторий JavaScript-DOM! Здесь вы найдете различные примеры кода, задания и
+                руководства для изучения JavaScript Document Object Model (DOM). Репозиторий создан с целью помочь вам
+                освоить работу с DOM и создание интерактивных веб-страниц с использованием JavaScript.
+            </p>
+        </section>
 
-    <section>
-      <h2>Задания</h2>
-      <ul>
-        <li>Задание 1: Создание простого веб-сайта с HTML и CSS</li>
-        <li>Задание 2: Добавление динамического контента с использованием JavaScript</li>
-        <li>Задание 3: Работа с базой данных и серверной стороной</li>
-        <li>Задание 4: Разработка реактивного интерфейса с использованием фреймворка Vue.js</li>
-      </ul>
-    </section>
+        <section>
+            <h2>Контрольные точки</h2>
+            <ul>
+                <li>Контрольная точка 1: Манипуляция элементами DOM</li>
+                <li>Контрольная точка 2: Обработка событий с помощью DOM</li>
+                <li>Контрольная точка 3: Создание динамического контента с помощью DOM</li>
+                <li>Контрольная точка 4: Обход и изменение DOM-элементов</li>
+            </ul>
+        </section>
 
-    <section>
-      <h2>Выполненные проекты</h2>
-      <ul>
-        <li>Проект 1: Онлайн магазин с возможностью добавления товаров в корзину</li>
-        <li>Проект 2: Блог с административной панелью для управления статьями</li>
-        <li>Проект 3: Игра "Крестики-нолики" с возможностью игры с компьютером</li>
-      </ul>
-    </section>
+        <section>
+            <h2>Установка</h2>
+            <pre>
+        <code>
+          # Пример команды для установки
+          npm install javascript-dom
+        </code>
+      </pre>
+        </section>
 
-    <section>
-      <h2>Контакты</h2>
-      <p>
-        Если вы заинтересованы в моих проектах или у вас есть предложения о сотрудничестве, пожалуйста, свяжитесь со мной по следующим контактам:
-      </p>
-      <p>Электронная почта: contact@deliorix.cc</p>
-      <p>Телефон: +7 977 979 01 81</p>
-    </section>
-  </main>
+        <section>
+            <h2>Контакты</h2>
+            <p>
+                Если вы заинтересованы в моих проектах или у вас есть предложения о сотрудничестве, пожалуйста,
+                свяжитесь со мной по следующим контактам:
+            </p>
+            <p>Электронная почта: contact@deliorix.cc</p>
+            <p>Телефон: +7 977 979 01 81</p>
+        </section>
+    </main>
 
-  <footer>
-    <p>Автор: Николай Соколов</p>
-    <p>
-      <a href="https://github.com/dlrxgit">GitHub репозиторий</a>
-    </p>
-  </footer>
+    <footer>
+        <p>Автор: Николай Соколов</p>
+        <p>
+            <a href="https://github.com/dlrxgit">GitHub репозиторий</a>
+        </p>
+    </footer>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            setTimeout(function () {
+                document.body.style.opacity = 1;
+            }, 500);
+        });
+    </script>
+
 </body>
+
 </html>
