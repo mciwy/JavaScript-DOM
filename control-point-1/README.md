@@ -18,9 +18,8 @@
 ## Как использовать проект
 
 Чтобы использовать этот проект, выполните следующие действия:
-
-1. Клонируйте репозиторий на свою локальную машину: git clone https://github.com/dlrxgit/JS-DOM.git
-2. Перейдите в папку `control-point-1`: cd JS-DOM/control-point-1
+1. Клонируйте репозиторий на свою локальную машину: `git clone https://github.com/dlrxgit/JS-DOM.git`
+2. Перейдите в папку `control-point-1`: `cd JS-DOM/control-point-1`
 3. Откройте файл `index.html` в вашем любимом браузере.
 4. Изучите код в файлах `index.html`, `style.css` и `script.js` для понимания решения задачи и взаимодействия с DOM.
 
