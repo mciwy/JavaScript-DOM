@@ -1,9 +1,12 @@
-/* Общие стили */
 body {
   font-family: Arial, sans-serif;
   background-color: #f8f8f8;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 h1, h2 {
@@ -11,15 +14,14 @@ h1, h2 {
 }
 
 .container {
+  width: 100%;
   max-width: 500px;
-  margin: 0 auto;
   padding: 20px;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Стили для формы */
 form {
   margin-bottom: 20px;
 }
@@ -52,7 +54,6 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-/* Стили для миниатюры карты */
 .card-preview {
   margin-bottom: 20px;
   padding: 20px;
@@ -74,7 +75,6 @@ button[type="submit"] {
   text-align: center;
 }
 
-/* Стили для таблицы данных карт */
 table {
   width: 100%;
   border-collapse: collapse;
