@@ -1,3 +1,5 @@
+# JavaScript-DOM Repository
+
 ![JavaScript & DOM](https://img.shields.io/badge/JavaScript-DOM-yellow)
 
 👋 Welcome to my GitHub repository dedicated to my works and projects related to JavaScript and the Document Object Model (DOM). Here, you will find a collection of interesting projects I've created using JavaScript and DOM manipulation.
