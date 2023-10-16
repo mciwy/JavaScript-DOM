@@ -26,4 +26,4 @@ To explore or interact with the projects, simply follow the provided project lin
 
 ## Contact
 
-📧 If you have any questions, suggestions, or would like to get in touch with me, please feel free to contact me via email at contact@deliorix.cc
+📧 If you have any questions, suggestions, or would like to get in touch with me, please feel free to contact me via email at <contact@deliorix.cc>
